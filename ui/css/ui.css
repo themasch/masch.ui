@@ -1,0 +1,39 @@
+.ui-resizable-handle { position: absolute;font-size: 0.1px;z-index: 99999; display: block;}
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
+.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
+.ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
+.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0; height: 100%; }
+.ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
+.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+.ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px; }
+.always-on-top { z-index: 1000 ! important; }
+.ui-taskbar { position: fixed; bottom: 0; left:0; width: 100%; height: 4em; z-index: 99999 }
+.ui-taskbar-entry { padding: 2px 5px; margin: 2px; float: left; cursor: pointer}
+.window .buttons img { cursor: pointer }
+
+
+/* DESIGN */
+.ui-taskbar-entry {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(170, 170, 180, 0.9)), to(rgba(190, 190, 200, 1)), color-stop(.1, rgba(170, 170, 180, 0.9)));
+    background: -moz-linear-gradient(rgba(170, 170, 180, 0.9), rgba(190, 190, 200, 1) 90%);
+    border-top: 1px solid gray;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.ui-taskbar-entry.minimized {
+    background: -moz-linear-gradient(rgba(70, 70, 80, 0.9), rgba(90, 90, 100, 1) 90%);
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(70, 70, 80, 0.4)), to(rgba(90, 90, 100, 0.9)), color-stop(.1, rgba(70, 70, 80, 0.4)));
+}
+
+.ui-taskbar {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(170, 170, 180, 0.4)), to(rgba(190, 190, 200, 0.9)), color-stop(.1, rgba(170, 170, 180, 0.4)));
+    background: -moz-linear-gradient(rgba(170, 170, 180, 0.4) 10%, rgba(190, 190, 200, .9));
+    border-top: 1px solid gray;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
